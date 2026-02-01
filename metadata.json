@@ -1,0 +1,7 @@
+{
+  "name": "ARNS QR Tools – Scanner & Generator",
+  "description": "A premium, production-ready QR code utility platform for instant scanning and high-quality generation with customization.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
