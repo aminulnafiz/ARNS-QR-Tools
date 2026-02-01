@@ -2,6 +2,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { useApp } from '../store';
 import { ScanIcon } from './Icons';
+import { BookOpenIcon, CalendarIcon } from './Icon';
 
 const Scanner: React.FC = () => {
   const { addHistory, config } = useApp();
@@ -181,6 +182,32 @@ const Scanner: React.FC = () => {
         <div className="glass p-4 rounded-3xl text-center border-slate-800">
           <p className="text-[10px] uppercase tracking-widest text-slate-500 font-bold mb-1">Mode</p>
           <span className="text-sm font-bold text-slate-200">Auto Detect</span>
+        </div>
+      </div>
+
+      <div className="pt-6">
+        <h3 className="text-[10px] font-black text-slate-600 uppercase tracking-widest mb-4 flex items-center">
+          <span className="w-4 h-px bg-slate-800 mr-2" /> Quick Portals
+        </h3>
+        <div className="grid grid-cols-2 gap-3">
+          <a 
+            href="https://arns-study-zone.vercel.app/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex flex-col items-center justify-center p-4 rounded-2xl bg-slate-900 border border-white/5 hover:border-blue-500/30 transition-all group"
+          >
+            <BookOpenIcon className="w-6 h-6 text-blue-500 mb-2 group-hover:scale-110 transition-transform" />
+            <span className="text-xs font-bold text-white">Study Zone</span>
+          </a>
+          <a 
+            href="https://arns-exam-routine.vercel.app/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex flex-col items-center justify-center p-4 rounded-2xl bg-slate-900 border border-white/5 hover:border-cyan-500/30 transition-all group"
+          >
+            <CalendarIcon className="w-6 h-6 text-cyan-500 mb-2 group-hover:scale-110 transition-transform" />
+            <span className="text-xs font-bold text-white">Exam Routine</span>
+          </a>
         </div>
       </div>
     </div>
